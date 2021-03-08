@@ -13,6 +13,7 @@ function generate() {
 	}
 
 	qrcode.makeCode(value.value);
+
 }
 
 function printing(qrimage) {

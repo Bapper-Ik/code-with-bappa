@@ -17,20 +17,26 @@
 
     <div class="container">
         <header id="header">
-            <h2> QR Code Generator </h2>
+            <h4> QR Code Generator </h4>
         </header>
 
         
             
-            <article>
-                <form onsubmit="generate(); return false;">
-                        <input type="text" id="TA" placeholder="Write Text to Generate QR Image" maxlength="255">
+            <article id="art">
+               <div class="gen">
+                   <form onsubmit="generate(); return false;">
+                    <textarea id="TA" placeholder="write a text to generate QR Image" maxlength="255"></textarea>
+                        <!-- <input type="text" id="TA" placeholder="Write Text to Generate QR Image" maxlength="255"> -->
                         <input type="submit" value="GENERATE" id="gen">
                         
-                </form>
+                    </form>
+                </div>
                 
-                <div id="qrcode" style="height: 150px; width: 150px;" class="d-1"></div>
-                <button onclick="printing('qrcode')">Print</button>
+                <div class="dec"> 
+                    <div id="qrcode" style="height: 150px; width: 150px;" class="d-1"></div>
+                     <button onclick="printing('qrcode')">Print</button>
+                </div>
+               
             </article>
                 
                 
@@ -44,5 +50,10 @@
     <footer><p>copyright &copy;2021 IAIICT project group 7</p></footer>
 
 <script type="text/javascript" src="./code.js"></script>
+
+<script>
+
+
+</script>
 </body>
 </html>

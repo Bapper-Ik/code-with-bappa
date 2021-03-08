@@ -1,4 +1,5 @@
 body{
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
@@ -10,7 +11,7 @@ body{
     background-color: rgba(255, 255, 255, 0.1);
     text-align: center;
     padding: 10px;
-    box-shadow: 0px 1px 20px black;    
+       
 }
 
 #header h2{
@@ -28,19 +29,17 @@ body{
 }
 
 .container{
-    
-    display: flex;
-
+    /* display: grid;
+    grid-auto-rows: minmax(100px auto) */
 }
 
 
 article{
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 1px 1px 10px black, -1px -1px 10px black;
-    height: fit-content;
-    flex: 3;
     padding: 30px 20px;
-    margin: 40px 70px 0;
+    margin: 40px auto 100px;
+    width: 900px;
     order: 1;
     border-radius: 50px;
 }
@@ -65,10 +64,14 @@ article details summary{
     outline: none;
 }
 
+
+.columns{
+    
+}
+
+
 aside{
-    flex: 1;
     order: 2;
-    height: fit-content;
 }
 
 aside section{
@@ -78,8 +81,8 @@ aside section{
 }
 
 aside section img{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
 }
 
 aside header h3{
@@ -153,7 +156,7 @@ a:hover{
 
 footer{
     background-color: #333;
-    padding: 5px 0;
+    padding: 15px 0;
 }
 
 footer p{
@@ -161,3 +164,34 @@ footer p{
     text-transform: capitalize;
     color: #cca;
 }
+
+
+@media screen and (max-width: 950px){
+    #header{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .sticker{
+        display: none;
+    }
+
+    #header{
+        width: auto;
+    }
+
+    article{
+        width: auto;
+        margin: 20px 10px;
+    }
+
+    footer{
+        width: auto;
+    }
+}
+
