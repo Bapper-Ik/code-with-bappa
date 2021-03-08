@@ -3,27 +3,28 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
-    background: rgba(25, 52, 84, 1);
+    background: white;
 }
 
 #header{
     position: relative;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #f5f5f5;
     text-align: center;
     padding: 10px;
        
 }
 
 #header h2{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    font-size: 35px;
-    padding: 20px 0 0;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 0 0 45px;
     margin: 0px;
 }
 
 #header span{
-    color: #cca;
+    color: #333;
     text-transform: capitalize;
     text-decoration: underline;
 }
@@ -35,8 +36,8 @@ body{
 
 
 article{
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 1px 1px 10px black, -1px -1px 10px black;
+    background-color: #eee;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .23);
     padding: 30px 20px;
     margin: 40px auto 100px;
     width: 900px;
@@ -51,7 +52,7 @@ article h3{
 }
 
 article p{
-    color: #cca;
+    color: ;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     line-height: 1.7rem;
