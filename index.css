@@ -29,11 +29,6 @@ body{
     text-decoration: underline;
 }
 
-.container{
-    /* display: grid;
-    grid-auto-rows: minmax(100px auto) */
-}
-
 
 article{
     background-color: #eee;
@@ -52,7 +47,6 @@ article h3{
 }
 
 article p{
-    color: ;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     line-height: 1.7rem;
@@ -63,11 +57,6 @@ article details summary{
     font-weight: bolder;
     font-size: 20px;
     outline: none;
-}
-
-
-.columns{
-    
 }
 
 
