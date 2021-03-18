@@ -217,6 +217,11 @@ footer p{
         bottom: 0;
         
     }
+
+    header#header > h2 > span > button{
+        display: block;
+        margin-bottom: 10px;
+    }
    
 }
 

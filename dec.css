@@ -183,6 +183,11 @@ footer p{
 
     }
 
+    header#header > h2 > span > button{
+        display: block;
+        margin-bottom: 10px;
+    }
+
     @media screen and (max-width: 375px){
         #art{
             width: initial;
@@ -194,6 +199,8 @@ footer p{
         .container header#art{
             width: initial;
         }
+
+       
     }
 
    
