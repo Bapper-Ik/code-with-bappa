@@ -1,0 +1,193 @@
+body{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background: white;
+}
+
+#header{
+    position: relative;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+       
+}
+
+#header h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 0 0 45px;
+    margin: 0px;
+}
+
+#header span{
+    color: #333;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+
+article{
+    background-color: #eee;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .23);
+    padding: 30px 20px;
+    margin: 40px auto 100px;
+    width: 600px;
+    order: 1;
+    border-radius: 20px;
+}
+
+article h3{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin: 0px;
+}
+
+article p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.7rem;
+}
+
+article details summary{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 20px;
+    outline: none;
+}
+
+article details summary a{
+    text-decoration: none;
+}
+
+aside{
+    order: 2;
+}
+
+aside section{
+    color: whitesmoke;
+    padding: 0px 20px 5px;
+    width: 200px;
+}
+
+aside section img{
+    height: 100px;
+    width: 100px;
+}
+
+aside header h3{
+    color: #cca;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+aside section span{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+
+a{
+    color: green;
+    font-size: 18px;
+}
+
+
+a:hover{
+    transition: linear;
+    color: navy;
+}
+
+.sticker{
+    color: whitesmoke;
+    /* background: linear-gradient(to top right, blue, yellow); */
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
+    width: 100px;
+    padding: 0px 10px 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+
+
+
+@keyframes animate{
+    from {
+        background-color: green;
+    }
+
+    to {
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+    }
+}
+
+.sticker{
+    -webkit-animation-name: animate;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    
+    animation-name: animate;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.sticker p{
+    text-align: center;
+    padding: 15px 10px 0 ;
+}
+
+
+footer{
+    background-color: #333;
+    padding: 15px 0;
+}
+
+footer p{
+    text-align: center;
+    text-transform: capitalize;
+    color: #cca;
+}
+
+
+@media screen and (max-width: 950px){
+    #header{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .sticker{
+        display: none;
+    }
+
+    #header{
+        width: auto;
+    }
+
+    article{
+        width: auto;
+        margin: 20px 10px;
+    }
+
+    footer{
+        width: auto;
+    }
+}
+
