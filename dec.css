@@ -17,7 +17,7 @@ body{
     width: 100%;
     text-align: center;
     background-color:white;
-    box-shadow: 0px 1px 20px black;    
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, .13);    
 }
 
 #header h2{
@@ -25,8 +25,7 @@ body{
     font-size: 25px;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 30px 0 20px 47px;
-    margin-bottom: 0px;
+    padding: 30px 0 47px 47px;
     color: #333;
 
 }
@@ -36,12 +35,12 @@ article{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: white;
-    box-shadow: 1px 1px 10px black, -1px -1px 10px black;
+    box-shadow: 0 0 32px rgba(0,0,0,.23);
     padding: 30px 20px;
     margin: 40px auto 100px;
     width: 900px;
     order: 1;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 
@@ -98,7 +97,27 @@ img{
     cursor: pointer;
 }
 
+header > h2 > span{
+    padding-right: 60px;
+}
 
+header > h2 > span > button{
+    height: 40px;
+    width: 100px;
+    background-color: rgba(24, 65, 32,.82);
+    border: none;
+    border-radius: 4px;
+}
+
+header > h2 > span > button > a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+header > h2 > span > button:hover{
+    cursor: pointer;
+}
 
 footer{
     position: fixed;

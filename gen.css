@@ -13,18 +13,23 @@ body{
 }
 
 #header{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    text-align: center;
     background-color:white;
-    box-shadow: 0 0 32px rgba(0, 0, 0, .23);    
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, .13);    
 }
 
-#header h4{
-    font-size: 20px;
+#header h2{
+    text-align: left;
+    font-size: 25px;
     text-transform: uppercase;
-    justify-self: left;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 0 57px 47px;
     margin-bottom: 0px;
-    padding: 20px 0 20px 60px;
     color: #333;
+
 }
 
 
@@ -78,7 +83,7 @@ article header{
 }
 
 input[type="submit"]{
-    background-color: #273;
+    background-color: rgba(24, 65, 32,.82);
     color: white;
     position: relative;
     left: 10px;
@@ -104,13 +109,37 @@ button{
     padding: 2px 35px;
     cursor: pointer;
     outline: none;
-    border-radius: 6px;
+    border-radius: 4px;
     font-size: 18px;
 
 }
 
 .dec{
     position: relative;
+}
+
+header#header > h2 > span > button{
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 5px;
+    width: 100px;
+    height: 50px;
+    background-color: rgba(24, 65, 32,.82);
+    margin-right: 40px;
+    border: none;    
+}
+
+
+header#header > h2 > span > button > a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+header#header > h2 > span >{
+    padding-left: 0px;
+    text-align: center;
 }
 
 

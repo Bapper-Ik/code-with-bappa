@@ -9,32 +9,29 @@
     <script type="text/javascript" src="main/jquery.js"></script>
     <script type="text/javascript" src="main/qrcode.js"></script>
     
-    
+    <!-- <link rel="stylesheet" href="tailwind.css"> -->
     <link rel="stylesheet" href="dec.css"> 
    
-
-    <script type="text/javascript">
-        
-    </script>
 </head>
 <body>
 
     <div class="container">
+        
         <header id="header">
-            <h2> QR Code Reader </h2>
+            <h2><span><button><a href="index.html">HOME</a></button></span> QR Code Reader </h2>
         </header>
 
         
             
             <article id="art"> 
-               <div class="image">
-                   <img src="images/welcome.png" alt="QRimage" id="QR">
+               <div class="image" id="image">
+                   <img src="images/welcome.png" alt="QRimage" id="qr">
                 </div> 
                 
                 <div class="read">
                     <h2>Upload a QR Code Image</h2>
                     <textarea name="text" id="content" cols="30" rows="10" class="qrtext" readonly></textarea>
-                    <input type="file" id="file" name="file">
+                    <input type="file" id="file" name="file" multiple>
                 </div>
                 
                 <script src="main/qrReader.js"></script>
@@ -47,10 +44,10 @@
             </div>
       
     
-   
 
     <footer><p>copyright &copy;2021 IAIICT project group 7</p></footer>
 
-<script type="text/javascript" src="./code.js"></script>
+<script type="text/javascript" src="./preview.js"></script>
+
 </body>
 </html>

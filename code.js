@@ -22,3 +22,4 @@ function printing(qrimage) {
 	w.document.write(qrimg);
 	w.print();
 }
+console.log(6789)

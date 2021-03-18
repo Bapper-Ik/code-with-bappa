@@ -35,9 +35,9 @@ article{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .23);
     padding: 30px 20px;
     margin: 40px auto 100px;
-    width: 900px;
+    width: 600px;
     order: 1;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 article h3{
@@ -59,6 +59,9 @@ article details summary{
     outline: none;
 }
 
+article details summary a{
+    text-decoration: none;
+}
 
 aside{
     order: 2;
@@ -114,6 +117,9 @@ a:hover{
     cursor: pointer;
     
 }
+
+
+
 
 @keyframes animate{
     from {
