@@ -194,6 +194,11 @@ footer p{
         .container header#art{
             width: initial;
         }
+
+        header#header > h2 > span > button{
+            display: block;
+            margin-bottom: 10px;
+        }
     }
 
    
