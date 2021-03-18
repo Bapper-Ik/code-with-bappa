@@ -188,6 +188,10 @@ footer p{
         margin-bottom: 10px;
     }
 
+    header#header > h2 {
+        margin-left: -30px;
+    }
+
     @media screen and (max-width: 375px){
         #art{
             width: initial;
